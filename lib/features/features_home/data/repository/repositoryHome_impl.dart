@@ -55,23 +55,5 @@ class RepositoryHomeImpl extends RepositoryHome {
 
   }
 
-  @override
-  Future<Either<Failure, List<CommitsEntities>>> getCommits(String name) async{
-    // TODO: implement getCommits
-
-    if (await _networkInfo.isConnected) {
-      try {
-        final response = await _remoteDataSource.getCommits(name);
-        List<CommitsEntities>? recipes=(response?.map((e) => e.toDomain()) ?? Iterable.empty()).cast<CommitsEntities>().toList();
-        return Right(recipes);
-
-      } catch (e) {
-        return Left(ErrorHandler.handle(e).failure);
-      }
-    } else {
-      return Left(DataSource.NI_INTERNET_CONNECTION.getFailure());
-
-    }
-  }
 
 }

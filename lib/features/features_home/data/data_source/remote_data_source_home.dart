@@ -11,7 +11,6 @@ abstract class RemoteDataSourceHome {
 
 
    Future<List<ModelCountry>> getcountrys();
-   Future<List<ModelCommits>> getCommits(String name);
 
 
 }
@@ -24,12 +23,6 @@ abstract class RemoteDataSourceHome {
   @override
   Future<List<ModelCountry>> getcountrys() async{
     return await _appServiceClient.getcountrys();
-  }
-
-  @override
-  Future<List<ModelCommits>> getCommits(String name) async{
-    // TODO: implement getCommits
-    return await _appServiceClient.getCommits(name);
   }
 
 

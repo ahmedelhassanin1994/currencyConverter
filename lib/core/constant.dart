@@ -1,6 +1,7 @@
 class Constant {
   static const String baseUrl = "https://restcountries.com/";
   static const int SliderCount = 5;
+  static const api_key="feb466c199-9c670905e6-sn3ff0";
 
 
 
@@ -14,4 +15,5 @@ class Constant {
   Constant._internal();
 
   static Constant get instance => _instance;
+
 }

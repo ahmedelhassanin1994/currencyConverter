@@ -12,11 +12,6 @@ part 'apiHome.g.dart';
 @RestApi(baseUrl: Constant.baseUrl)
 abstract class ApiHome {
   factory ApiHome(Dio dio, {String baseUrl}) = _ApiHome;
-
-
   @GET("v3.1/all")
   Future<List<ModelCountry>> getcountrys();
-
-  @GET("repos/mralexgray/{name}/commits")
-  Future<List<ModelCommits>> getCommits(@Path() String name,{@Query('per_page') String per_page="3",});
 }

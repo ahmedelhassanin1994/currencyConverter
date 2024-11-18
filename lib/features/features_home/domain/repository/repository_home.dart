@@ -8,5 +8,4 @@ import 'package:mvvm_project/features/features_home/domain/entities/repos_entiti
 abstract class RepositoryHome {
 
    Future<Either<Failure,List<ModelCountry>>> getcountrys();
-   Future<Either<Failure,List<CommitsEntities>>> getCommits(String name);
 }

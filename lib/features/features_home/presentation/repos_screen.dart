@@ -38,7 +38,6 @@ class _ReposScreen extends State<ReposScreen> {
 
    @override
    void dispose() {
-     BlocProvider.of<ReposCubit>(context).closeSearch();
      super.dispose();
    }
 

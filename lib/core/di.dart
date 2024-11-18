@@ -9,12 +9,9 @@ import 'package:mvvm_project/features/features_home/data/network/apiHome.dart';
 import 'package:mvvm_project/features/features_home/data/data_source/local_data_source.dart';
 import 'package:mvvm_project/features/features_home/data/repository/repositoryHome_impl.dart';
 import 'package:mvvm_project/features/features_home/domain/repository/repository_home.dart';
-import 'package:mvvm_project/features/features_home/domain/usecase/commits_usecase.dart';
 import 'package:mvvm_project/features/features_home/domain/usecase/repos_usecase.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_commits/commits_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/counter_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
@@ -67,10 +64,7 @@ Future<void> initAppModule() async {
 HomeModule() {
   if (!GetIt.I.isRegistered<ReposUseCase>()) {
     instance.registerFactory<ReposUseCase>(() => ReposUseCase(instance()));
-    instance.registerFactory<CommitsUseCase>(() => CommitsUseCase(instance()));
     instance.registerFactory<ReposCubit>(() => ReposCubit(instance()));
-    instance.registerFactory<CommitsCubit>(() => CommitsCubit(instance()));
-    instance.registerFactory<CounterCubit>(() => CounterCubit());
     instance.registerFactory<SelectCountryCubit>(() => SelectCountryCubit(instance()));
 
 
