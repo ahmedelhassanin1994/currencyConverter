@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
       <recent name="$PROJECT_DIR$/lib/features/features_home/data/responeses" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter Test.tests in local_data_source.dart">
+  <component name="RunManager" selected="Flutter Test.AddCache">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="buildFlavor" value="Development" />
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
@@ -104,15 +101,15 @@
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="should open a box successfully" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should open a box successfully" />
+    <configuration name="should add a Model_Cache to the box" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="should add a Model_Cache to the box" />
       <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/remote/remote_data_source_home.dart" />
+    <configuration name="should open a box successfully" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="should open a box successfully" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
@@ -129,18 +126,18 @@
     <list>
       <item itemvalue="Flutter.main.dart" />
       <item itemvalue="Flutter Test.AddCache" />
+      <item itemvalue="Flutter Test.should add a Model_Cache to the box" />
       <item itemvalue="Flutter Test.should open a box successfully" />
-      <item itemvalue="Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" />
       <item itemvalue="Flutter Test.tests in local_data_source.dart" />
       <item itemvalue="Flutter Test.tests in remote_data_source_home.dart" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter Test.AddCache" />
+        <item itemvalue="Flutter Test.should add a Model_Cache to the box" />
         <item itemvalue="Flutter Test.tests in local_data_source.dart" />
         <item itemvalue="Flutter Test.should open a box successfully" />
-        <item itemvalue="Flutter Test.AddCache" />
         <item itemvalue="Flutter Test.tests in remote_data_source_home.dart" />
-        <item itemvalue="Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" />
       </list>
     </recent_temporary>
   </component>

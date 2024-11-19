@@ -33,11 +33,11 @@ void main() {
         ModelCountry(name: 'Egypt',code: 'EG',flag: 'flag.png',currencyName: 'EGP',currencySymbol: 'EGP'),
       ];
       // Stub the add method
-      when(mockBox.add(modelCache)).thenAnswer((_) async => 1);
+      when(mockBox.addAll(tcountrys)).thenAnswer((_) async => [1]);
 
       await localDataSource.AddCache(tcountrys);
 
-      verify(mockBox.add(modelCache)).called(1);
+      verify(mockBox.addAll(tcountrys)).called(1);
     });
   });
 
