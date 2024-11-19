@@ -16,6 +16,7 @@ class SelectCountryCubit extends Cubit<CountrySelectionState> {
   SelectCountryCubit(this.appPreferences) : super(CountrySelectionState(
     selectedFromCountry:'',
     selectedToCountry:'',
+    amount: '',
   ));
 
   void selectFromCountry(String country) {
@@ -27,7 +28,6 @@ class SelectCountryCubit extends Cubit<CountrySelectionState> {
   }
 
   updateSelectedCurrency(String model) {
-    print("state : ${state.currencyInputType}");
     if (state.currencyInputType == CurrencyInputType.to) {
       emit(state.copyWith(selectedToCountry: model));
       appPreferences.setCurrencyTO(model);
@@ -40,6 +40,9 @@ class SelectCountryCubit extends Cubit<CountrySelectionState> {
   updateSelectedType(CurrencyInputType currenttype){
     emit(state.copyWith(currencyInputType: currenttype));
 
+  }
+  void setAmount(String amount) {
+    emit(state.copyWith(amount: amount));
   }
 
   void getLastCurrency()async{

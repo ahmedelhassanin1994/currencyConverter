@@ -11,6 +11,7 @@ import 'package:mvvm_project/core/resources/responsive.dart';
 import 'package:mvvm_project/core/resources/constants/color_manager.dart';
 import 'package:mvvm_project/core/resources/constants/value_manager.dart';
 import 'package:mvvm_project/core/resources/router/router_path.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/widget/country_card.dart';
@@ -83,16 +84,37 @@ class _Currency_Converter extends State<Currency_Converter> {
                         ),
                         Container(
                           width: AppSize.s100.w,
-                          margin: EdgeInsets.only(top: AppMargin.m2.h,left: AppMargin.m2.w,right: AppMargin.m2.w),
+                          margin: EdgeInsets.only(top: AppMargin.m2.h,left: AppMargin.m8.w,right: AppMargin.m8.w),
+                          child: NumberInput(
+                              style: Theme.of(context).textTheme.headlineSmall,
+                              hintStyle:getMediumStyle(color: ColorManager.grey,fontSize: FontSize.s15.sp),
+                              borderRadius: BorderRadius.all(Radius.circular(AppRadius.r2.w)),
+                              onChanged: (val) {
+                                BlocProvider.of<SelectCountryCubit>(context).setAmount(val);
+                              },
+                              onSaved: (val) {
+
+                              },
+                              labelText: '',
+                              hintText:  "0",
+                              textEditingController: textEditingController_from,
+                              prefixIcon: null,
+                              errorStyle: null,
+                            ),
+                        ),
+                        Container(
+                          width: AppSize.s100.w,
+                          margin: EdgeInsets.only(top: AppMargin.m2.h,left: AppMargin.m12.w,right: AppMargin.m12.w),
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               InkWell(
                                 onTap: (){
                                   BlocProvider.of<SelectCountryCubit>(context).updateSelectedType(CurrencyInputType.from);
                                   Navigator.pushNamed(context, Routes.home);
-
                                 },
-                                child:Container(
+                                child:  Container(
                                   child: Text(
                                     '${state.selectedFromCountry}',
                                     style:getBoldStyle(color: ColorManager.black,fontSize: FontSize.s16.sp),
@@ -100,38 +122,13 @@ class _Currency_Converter extends State<Currency_Converter> {
 
                                 ),
                               ),
-                              SizedBox(
-                                width: AppSize.s5.w,
-                              ),
-
-                              Flexible(
-
-                                child: NumberInput(
-                                  style: Theme.of(context).textTheme.headlineSmall,
-                                  hintStyle:getMediumStyle(color: ColorManager.grey,fontSize: FontSize.s15.sp),
-                                  borderRadius: BorderRadius.all(Radius.circular(AppRadius.r2.w)),
-                                  onChanged: (val) {
-
-                                  },
-                                  onSaved: (val) {
-
-                                  },
-                                  labelText: '',
-                                  hintText:  "0",
-                                  textEditingController: textEditingController_from,
-                                  prefixIcon: null,
-                                  errorStyle: null,
+                              Container(
+                                child: Icon(
+                                  Icons.swap_horiz_outlined,
+                                  size: AppSize.s5.w,
                                 ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          width: AppSize.s100.w,
-                          margin: EdgeInsets.only(top: AppMargin.m2.h,left: AppMargin.m2.w,right: AppMargin.m2.w),
-                          child: Row(
-                            children: [
-                             InkWell(
+                              ),
+                              InkWell(
                                onTap: (){
                                  BlocProvider.of<SelectCountryCubit>(context).updateSelectedType(CurrencyInputType.to);
                                  Navigator.pushNamed(context, Routes.home);
@@ -144,47 +141,87 @@ class _Currency_Converter extends State<Currency_Converter> {
 
                                ),
                              ),
-                              SizedBox(
-                                width: AppSize.s5.w,
-                              ),
 
-                              Flexible(
-
-                                child: NumberInput(
-                                  style: Theme.of(context).textTheme.headlineSmall,
-                                  hintStyle:getMediumStyle(color: ColorManager.grey,fontSize: FontSize.s15.sp),
-                                  borderRadius: BorderRadius.all(Radius.circular(AppRadius.r2.w)),
-                                  onChanged: (val) {
-
-                                  },
-                                  onSaved: (val) {
-
-                                  },
-                                  labelText: '',
-                                  hintText:  "0",
-                                  textEditingController: textEditingController_to,
-                                  prefixIcon: null,
-                                  errorStyle: null,
-                                ),
-                              )
                             ],
                           ),
                         ),
 
-                        CustomButton(
-                          onTab: (){
+                      BlocBuilder<ConvertCubit, ConvertState>(
+                         builder: (context, stateConvert) {
+                           if(stateConvert is ConvertLoading){
+                             return Container(
+                                 margin: EdgeInsets.only(top: AppMargin.m8.h),
+                                 child: Center(child: CircularProgressIndicator()));
+                           }else{
+                             return CustomButton(
+                               onTab: (){
+                                 BlocProvider.of<ConvertCubit>(context).Convert(state.selectedFromCountry, state.selectedToCountry, state.amount);
 
-                          },
-                          padding: EdgeInsets.only(left: AppMargin.m4.w,right: AppMargin.m4.w,top: AppMargin.m2.h,bottom: AppMargin.m2.h),
-                          margin: EdgeInsets.only(left: AppMargin.m4.w,right: AppMargin.m4.w,top: AppMargin.m8.h),
-                          decoration:  BoxDecoration(
-                              color: ColorManager.primary,
-                              borderRadius:  BorderRadius.all(
-                                Radius.circular(AppRadius.r3.w),
-                              )),
-                          text:AppStrings.convert_currencies,
-                          style: Theme.of(context).textTheme.titleMedium,
-                        )
+                               },
+                               padding: EdgeInsets.only(left: AppMargin.m4.w,right: AppMargin.m4.w,top: AppMargin.m2.h,bottom: AppMargin.m2.h),
+                               margin: EdgeInsets.only(left: AppMargin.m4.w,right: AppMargin.m4.w,top: AppMargin.m8.h),
+                               decoration:  BoxDecoration(
+                                   color: ColorManager.primary,
+                                   borderRadius:  BorderRadius.all(
+                                     Radius.circular(AppRadius.r3.w),
+                                   )),
+                               text:AppStrings.convert_currencies,
+                               style: Theme.of(context).textTheme.titleMedium,
+                             );
+                           }
+
+                        },
+
+                        ),
+
+                      BlocBuilder<ConvertCubit, ConvertState>(
+                         builder: (context, stateConvert) {
+                          if(stateConvert is ConvertLoaaded){
+                            print("state : ${stateConvert}");
+                            return Container(
+                              width: AppSize.s100.w,
+                              margin: EdgeInsets.only(left: AppMargin.m4.w,right: AppMargin.m4.w),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.only(top: AppMargin.m4.h,),
+                                    child: Text(
+                                      "${AppStrings.result} : ",
+                                        style:getBoldStyle(color: ColorManager.black,fontSize: FontSize.s16.sp)
+
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: AppSize.s1.h,
+                                  ),
+                                  Container(
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                            "${stateConvert.convert.currencyName} : ",
+                                            style:getMediumStyle(color: ColorManager.black,fontSize: FontSize.s16.sp)
+                                        ),
+                                        SizedBox(
+                                          width: AppSize.s2.w,
+                                        ),
+                                        Text(
+                                            "${stateConvert.convert.result?.currencies.values.first}",
+                                            style:getMediumStyle(color: ColorManager.black,fontSize: FontSize.s16.sp)
+                                        ),
+                                      ],
+                                    )
+                                  )
+                                ],
+                              ),
+                            );
+                          }else{
+                            return Container();
+                          }
+
+                    })
                       ],
                     );
                   }

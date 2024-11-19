@@ -4,6 +4,8 @@ import 'package:mvvm_project/core/di.dart';
 import 'package:mvvm_project/core/resources/constants/theme_manager.dart';
 import 'package:mvvm_project/core/resources/router/app_router.dart';
 import 'package:mvvm_project/core/resources/router/router_path.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -21,6 +23,8 @@ class _MyAppState extends State<MyApp> {
 
   ReposCubit reposCubit= instance<ReposCubit>();
   SelectCountryCubit selectCountryCubit= instance<SelectCountryCubit>();
+  ConvertCubit convertCubit= instance<ConvertCubit>();
+  HistoricalCubit historicalCubit= instance<HistoricalCubit>();
 
   @override
   void initState() {
@@ -46,7 +50,12 @@ class _MyAppState extends State<MyApp> {
            BlocProvider<SelectCountryCubit>(
                create: (BuildContext context) =>selectCountryCubit
            ),
-
+           BlocProvider<ConvertCubit>(
+               create: (BuildContext context) =>convertCubit
+           ),
+           BlocProvider<HistoricalCubit>(
+               create: (BuildContext context) =>historicalCubit
+           ),
          ],
          child:   MaterialApp(
            onGenerateRoute: RouteGenerator.getRoute,

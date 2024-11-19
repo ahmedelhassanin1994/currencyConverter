@@ -10,7 +10,7 @@ import 'package:mockito/mockito.dart' as _i1;
 import 'package:mvvm_project/core/common/network/failure.dart' as _i5;
 import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart'
     as _i6;
-import 'package:mvvm_project/features/features_home/domain/entities/commits_entities.dart'
+import 'package:mvvm_project/features/features_home/data/responeses/response_convert.dart'
     as _i7;
 import 'package:mvvm_project/features/features_home/domain/repository/repository_home.dart'
     as _i3;
@@ -65,21 +65,32 @@ class MockRepositoryHome extends _i1.Mock implements _i3.RepositoryHome {
       ) as _i4.Future<_i2.Either<_i5.Failure, List<_i6.ModelCountry>>>);
 
   @override
-  _i4.Future<_i2.Either<_i5.Failure, List<_i7.CommitsEntities>>> getCommits(
-          String? name) =>
+  _i4.Future<_i2.Either<_i5.Failure, _i7.ResponseConvert>> Convert(
+    String? from,
+    String? to,
+    String? amount,
+  ) =>
       (super.noSuchMethod(
         Invocation.method(
-          #getCommits,
-          [name],
+          #Convert,
+          [
+            from,
+            to,
+            amount,
+          ],
         ),
-        returnValue: _i4
-            .Future<_i2.Either<_i5.Failure, List<_i7.CommitsEntities>>>.value(
-            _FakeEither_0<_i5.Failure, List<_i7.CommitsEntities>>(
+        returnValue:
+            _i4.Future<_i2.Either<_i5.Failure, _i7.ResponseConvert>>.value(
+                _FakeEither_0<_i5.Failure, _i7.ResponseConvert>(
           this,
           Invocation.method(
-            #getCommits,
-            [name],
+            #Convert,
+            [
+              from,
+              to,
+              amount,
+            ],
           ),
         )),
-      ) as _i4.Future<_i2.Either<_i5.Failure, List<_i7.CommitsEntities>>>);
+      ) as _i4.Future<_i2.Either<_i5.Failure, _i7.ResponseConvert>>);
 }

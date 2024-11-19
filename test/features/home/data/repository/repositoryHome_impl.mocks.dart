@@ -5,17 +5,17 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i5;
 
-import 'package:hive/hive.dart' as _i2;
+import 'package:hive/hive.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:mvvm_project/core/common/network/network_info.dart' as _i7;
 import 'package:mvvm_project/features/features_home/data/data_source/local_data_source.dart'
     as _i8;
 import 'package:mvvm_project/features/features_home/data/data_source/remote_data_source_home.dart'
     as _i4;
-import 'package:mvvm_project/features/features_home/data/responeses/model_commits.dart'
-    as _i6;
 import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart'
-    as _i3;
+    as _i6;
+import 'package:mvvm_project/features/features_home/data/responeses/response_convert.dart'
+    as _i2;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -30,8 +30,9 @@ import 'package:mvvm_project/features/features_home/data/responeses/model_countr
 // ignore_for_file: camel_case_types
 // ignore_for_file: subtype_of_sealed_class
 
-class _FakeBox_0<E> extends _i1.SmartFake implements _i2.Box<E> {
-  _FakeBox_0(
+class _FakeResponseConvert_0 extends _i1.SmartFake
+    implements _i2.ResponseConvert {
+  _FakeResponseConvert_0(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -40,8 +41,8 @@ class _FakeBox_0<E> extends _i1.SmartFake implements _i2.Box<E> {
         );
 }
 
-class _FakeModelCountry_1 extends _i1.SmartFake implements _i3.ModelCountry {
-  _FakeModelCountry_1(
+class _FakeBox_1<E> extends _i1.SmartFake implements _i3.Box<E> {
+  _FakeBox_1(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -60,25 +61,43 @@ class MockRemoteDataSourceHome extends _i1.Mock
   }
 
   @override
-  _i5.Future<List<_i3.ModelCountry>> getcountrys() => (super.noSuchMethod(
+  _i5.Future<List<_i6.ModelCountry>> getcountrys() => (super.noSuchMethod(
         Invocation.method(
           #getcountrys,
           [],
         ),
         returnValue:
-            _i5.Future<List<_i3.ModelCountry>>.value(<_i3.ModelCountry>[]),
-      ) as _i5.Future<List<_i3.ModelCountry>>);
+            _i5.Future<List<_i6.ModelCountry>>.value(<_i6.ModelCountry>[]),
+      ) as _i5.Future<List<_i6.ModelCountry>>);
 
   @override
-  _i5.Future<List<_i6.ModelCommits>> getCommits(String? name) =>
+  _i5.Future<_i2.ResponseConvert> Convert(
+    String? from,
+    String? to,
+    String? amount,
+  ) =>
       (super.noSuchMethod(
         Invocation.method(
-          #getCommits,
-          [name],
+          #Convert,
+          [
+            from,
+            to,
+            amount,
+          ],
         ),
         returnValue:
-            _i5.Future<List<_i6.ModelCommits>>.value(<_i6.ModelCommits>[]),
-      ) as _i5.Future<List<_i6.ModelCommits>>);
+            _i5.Future<_i2.ResponseConvert>.value(_FakeResponseConvert_0(
+          this,
+          Invocation.method(
+            #Convert,
+            [
+              from,
+              to,
+              amount,
+            ],
+          ),
+        )),
+      ) as _i5.Future<_i2.ResponseConvert>);
 }
 
 /// A class which mocks [NetworkInfo].
@@ -105,37 +124,32 @@ class MockLocalDataSource extends _i1.Mock implements _i8.LocalDataSource {
   }
 
   @override
-  _i5.Future<_i2.Box<dynamic>> Openbox() => (super.noSuchMethod(
+  _i5.Future<_i3.Box<dynamic>> Openbox() => (super.noSuchMethod(
         Invocation.method(
           #Openbox,
           [],
         ),
-        returnValue: _i5.Future<_i2.Box<dynamic>>.value(_FakeBox_0<dynamic>(
+        returnValue: _i5.Future<_i3.Box<dynamic>>.value(_FakeBox_1<dynamic>(
           this,
           Invocation.method(
             #Openbox,
             [],
           ),
         )),
-      ) as _i5.Future<_i2.Box<dynamic>>);
+      ) as _i5.Future<_i3.Box<dynamic>>);
 
   @override
-  _i5.Future<_i3.ModelCountry> getCache() => (super.noSuchMethod(
+  _i5.Future<List<_i6.ModelCountry>> getCache() => (super.noSuchMethod(
         Invocation.method(
           #getCache,
           [],
         ),
-        returnValue: _i5.Future<_i3.ModelCountry>.value(_FakeModelCountry_1(
-          this,
-          Invocation.method(
-            #getCache,
-            [],
-          ),
-        )),
-      ) as _i5.Future<_i3.ModelCountry>);
+        returnValue:
+            _i5.Future<List<_i6.ModelCountry>>.value(<_i6.ModelCountry>[]),
+      ) as _i5.Future<List<_i6.ModelCountry>>);
 
   @override
-  _i5.Future<void> AddCache(_i3.ModelCountry? modelcache) =>
+  _i5.Future<void> AddCache(List<_i6.ModelCountry>? modelcache) =>
       (super.noSuchMethod(
         Invocation.method(
           #AddCache,

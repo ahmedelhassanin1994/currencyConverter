@@ -44,6 +44,7 @@ class NumberInput extends StatelessWidget{
         onChanged:onChanged ,
         maxLines: 1,
         maxLength: 13,
+        textAlign: TextAlign.center,
         validator: (input) => !isPhone(input!)? "" :
         input.length<1 ? "${AppStrings.plz_enter_input}" : null,
         decoration: InputDecoration(

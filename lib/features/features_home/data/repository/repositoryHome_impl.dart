@@ -12,6 +12,7 @@ import 'package:mvvm_project/features/features_home/data/data_source/remote_data
 import 'package:mvvm_project/features/features_home/data/mapper/mapper_home.dart';
 import 'package:mvvm_project/features/features_home/data/data_source/local_data_source.dart';
 import 'package:mvvm_project/features/features_home/data/responeses/model_repos.dart';
+import 'package:mvvm_project/features/features_home/data/responeses/response_convert.dart';
 import 'package:mvvm_project/features/features_home/domain/entities/commits_entities.dart';
 import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart';
 import 'package:mvvm_project/features/features_home/domain/entities/repos_entities.dart';
@@ -56,4 +57,36 @@ class RepositoryHomeImpl extends RepositoryHome {
   }
 
 
-}
+  @override
+  Future<Either<Failure, ResponseConvert>> Convert(String from, String to, String amount) async{
+    // TODO: implement Convert
+    if (await _networkInfo.isConnected) {
+    try{
+      final response=await _remoteDataSource.Convert(from, to, amount);
+      return Right(response);
+    }catch(e){
+      return Left(ErrorHandler.handle(e).failure);
+    }
+    }else{
+      return Left(DataSource.NI_INTERNET_CONNECTION.getFailure());
+
+    }
+    }
+
+  @override
+  Future<Either<Failure, Responsehistorical>> getHistorical(String from, String to, String date)async {
+    // TODO: implement getHistorical
+    if (await _networkInfo.isConnected) {
+      final response=await _remoteDataSource.getHistorical(from, to, date);
+      return Right(response);
+
+    }else{
+      return Left(DataSource.NI_INTERNET_CONNECTION.getFailure());
+
+    }
+
+    }
+
+
+  }
+

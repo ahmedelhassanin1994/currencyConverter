@@ -56,6 +56,8 @@ dependencies:
   intl: ^0.18.0
   country_currency_pickers: ^3.0.0
   shared_preferences:
+  flutter_dotenv: ^5.0.2
+
 
 
 
@@ -93,6 +95,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.1
+  envied_generator: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -7,9 +7,14 @@ import 'package:mvvm_project/core/common/network/network_info.dart';
 import 'package:mvvm_project/features/features_home/data/data_source/remote_data_source_home.dart';
 import 'package:mvvm_project/features/features_home/data/network/apiHome.dart';
 import 'package:mvvm_project/features/features_home/data/data_source/local_data_source.dart';
+import 'package:mvvm_project/features/features_home/data/network/api_currencyConverter.dart';
 import 'package:mvvm_project/features/features_home/data/repository/repositoryHome_impl.dart';
 import 'package:mvvm_project/features/features_home/domain/repository/repository_home.dart';
+import 'package:mvvm_project/features/features_home/domain/usecase/convert_usecase.dart';
+import 'package:mvvm_project/features/features_home/domain/usecase/historical_usecase.dart';
 import 'package:mvvm_project/features/features_home/domain/usecase/repos_usecase.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,6 +34,7 @@ Future<void> initAppModule() async {
   // app service client
   final dio = await instance<DioFactory>().getDio();
   instance.registerLazySingleton<ApiHome>(() => ApiHome(dio));
+  instance.registerLazySingleton<ApiCurrencyConverter>(() => ApiCurrencyConverter(dio));
 
   instance.registerLazySingleton<SharedPreferences>(() => sharedPrefs);
   instance.registerLazySingleton(() => AppPreferences(instance()));
@@ -36,7 +42,7 @@ Future<void> initAppModule() async {
 
 
   instance.registerLazySingleton<RemoteDataSourceHome>(
-      () => RemoteDataSourceHomeImplementer(instance()));
+      () => RemoteDataSourceHomeImplementer(instance(),instance()));
 
 
 
@@ -64,10 +70,12 @@ Future<void> initAppModule() async {
 HomeModule() {
   if (!GetIt.I.isRegistered<ReposUseCase>()) {
     instance.registerFactory<ReposUseCase>(() => ReposUseCase(instance()));
+    instance.registerFactory<ConvertUseCase>(() => ConvertUseCase(instance()));
+    instance.registerFactory<HistoricalUseCase>(() => HistoricalUseCase(instance()));
     instance.registerFactory<ReposCubit>(() => ReposCubit(instance()));
     instance.registerFactory<SelectCountryCubit>(() => SelectCountryCubit(instance()));
-
-
+    instance.registerFactory<ConvertCubit>(() => ConvertCubit(instance()));
+    instance.registerFactory<HistoricalCubit>(() => HistoricalCubit(instance()));
   }
 }
 

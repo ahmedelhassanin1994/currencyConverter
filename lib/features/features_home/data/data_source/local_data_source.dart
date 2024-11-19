@@ -29,17 +29,17 @@ class LocalDataSourceImplementer implements LocalDataSource {
   Future<void> deleteLocal(tittle) async {
     // TODO: implement deleteLocal
 
-    final box = await Openbox();
-    final Map<dynamic, dynamic> deliveriesMap = box.toMap();
-    dynamic desiredKey;
-    if (deliveriesMap.isNotEmpty) {
-      deliveriesMap.forEach((key, value) {
-        if (value.key == tittle) {
-          desiredKey = key;
-        }
-      });
-      box.delete(desiredKey);
-    }
+     final box = await Openbox();
+    // final Map<dynamic, dynamic> deliveriesMap = box.toMap();
+    // dynamic desiredKey;
+    // if (deliveriesMap.isNotEmpty) {
+    //   deliveriesMap.forEach((key, value) {
+    //     if (value.key == tittle) {
+    //       desiredKey = key;
+    //     }
+    //   });
+      box.clear();
+
   }
 
   @override

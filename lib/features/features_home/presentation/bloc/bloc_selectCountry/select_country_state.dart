@@ -12,6 +12,7 @@ class CountrySelectionState {
   CountrySelectionState({
     required this.selectedFromCountry,
     required this.selectedToCountry,
+    required this.amount,
     this.currencyInputType
 
   });
@@ -20,11 +21,13 @@ class CountrySelectionState {
   CountrySelectionState copyWith({
     String? selectedFromCountry,
     String? selectedToCountry,
+    String? amount,
     CurrencyInputType? currencyInputType,
   }) {
     return CountrySelectionState(
       selectedFromCountry: selectedFromCountry ?? this.selectedFromCountry,
       selectedToCountry: selectedToCountry ?? this.selectedToCountry,
+      amount: amount ??this.amount,
       currencyInputType:  currencyInputType ?? this.currencyInputType
     );
   }
