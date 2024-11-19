@@ -3,13 +3,17 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'dart:async' as _i3;
+import 'dart:async' as _i4;
 
 import 'package:mockito/mockito.dart' as _i1;
+import 'package:mvvm_project/features/features_home/data/network/api_currencyConverter.dart'
+    as _i6;
 import 'package:mvvm_project/features/features_home/data/network/apiHome.dart'
-    as _i2;
+    as _i3;
 import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart'
-    as _i4;
+    as _i5;
+import 'package:mvvm_project/features/features_home/data/responeses/response_convert.dart'
+    as _i2;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -24,21 +28,117 @@ import 'package:mvvm_project/features/features_home/data/responeses/model_countr
 // ignore_for_file: camel_case_types
 // ignore_for_file: subtype_of_sealed_class
 
+class _FakeResponseConvert_0 extends _i1.SmartFake
+    implements _i2.ResponseConvert {
+  _FakeResponseConvert_0(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
+class _FakeResponsehistorical_1 extends _i1.SmartFake
+    implements _i2.Responsehistorical {
+  _FakeResponsehistorical_1(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
 /// A class which mocks [ApiHome].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockApiHome extends _i1.Mock implements _i2.ApiHome {
+class MockApiHome extends _i1.Mock implements _i3.ApiHome {
   MockApiHome() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i3.Future<List<_i4.ModelCountry>> getcountrys() => (super.noSuchMethod(
+  _i4.Future<List<_i5.ModelCountry>> getcountrys() => (super.noSuchMethod(
         Invocation.method(
           #getcountrys,
           [],
         ),
         returnValue:
-            _i3.Future<List<_i4.ModelCountry>>.value(<_i4.ModelCountry>[]),
-      ) as _i3.Future<List<_i4.ModelCountry>>);
+            _i4.Future<List<_i5.ModelCountry>>.value(<_i5.ModelCountry>[]),
+      ) as _i4.Future<List<_i5.ModelCountry>>);
+}
+
+/// A class which mocks [ApiCurrencyConverter].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockApiCurrencyConverter extends _i1.Mock
+    implements _i6.ApiCurrencyConverter {
+  MockApiCurrencyConverter() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i4.Future<_i2.ResponseConvert> Convert(
+    String? from,
+    String? to,
+    String? amount, {
+    String? api_key = r'feb466c199-9c670905e6-sn3ff0',
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #Convert,
+          [
+            from,
+            to,
+            amount,
+          ],
+          {#api_key: api_key},
+        ),
+        returnValue:
+            _i4.Future<_i2.ResponseConvert>.value(_FakeResponseConvert_0(
+          this,
+          Invocation.method(
+            #Convert,
+            [
+              from,
+              to,
+              amount,
+            ],
+            {#api_key: api_key},
+          ),
+        )),
+      ) as _i4.Future<_i2.ResponseConvert>);
+
+  @override
+  _i4.Future<_i2.Responsehistorical> getHistorical(
+    String? from,
+    String? to,
+    String? date, {
+    String? api_key = r'feb466c199-9c670905e6-sn3ff0',
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getHistorical,
+          [
+            from,
+            to,
+            date,
+          ],
+          {#api_key: api_key},
+        ),
+        returnValue:
+            _i4.Future<_i2.Responsehistorical>.value(_FakeResponsehistorical_1(
+          this,
+          Invocation.method(
+            #getHistorical,
+            [
+              from,
+              to,
+              date,
+            ],
+            {#api_key: api_key},
+          ),
+        )),
+      ) as _i4.Future<_i2.Responsehistorical>);
 }

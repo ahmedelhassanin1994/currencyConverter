@@ -3,12 +3,11 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:mvvm_project/core/common/network/failure.dart';
 import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart';
-import 'package:mvvm_project/features/features_home/domain/entities/repos_entities.dart';
 import 'package:mvvm_project/features/features_home/domain/usecase/repos_usecase.dart';
 
-part 'repos_state.dart';
+part 'country_state.dart';
 
-class ReposCubit extends Cubit<ReposState> {
+class CountryCubit extends Cubit<CountryState> {
 
   late ReposUseCase reposUseCase;
   List<ModelCountry> searchCountry=[];
@@ -16,21 +15,21 @@ class ReposCubit extends Cubit<ReposState> {
   late bool isSearching = false;
 
 
-  ReposCubit(this.reposUseCase) : super(ReposLoading());
+  CountryCubit(this.reposUseCase) : super(CountryLoading());
 
   Future<void>get_getcountrys() async{
-    emit(ReposLoading());
+    emit(CountryLoading());
     (await reposUseCase.execute(
         InputUseCase())).fold((
         l) =>
     {
-      emit(ReposError(l)),
+      emit(CountryError(l)),
 
 
     }, (r) =>
     {
       allCountry=r,
-      emit(ReposLoaaded(r)),
+      emit(CountryLoaaded(r)),
 
     });
   }
@@ -50,7 +49,7 @@ class ReposCubit extends Cubit<ReposState> {
   }
   Future<void>closeSearch()async {
     isSearching=false;
-    emit(ReposLoaaded(allCountry));
+    emit(CountryLoaaded(allCountry));
 
   }
 

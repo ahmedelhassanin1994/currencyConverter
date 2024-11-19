@@ -5,8 +5,8 @@ import 'package:mvvm_project/core/resources/constants/theme_manager.dart';
 import 'package:mvvm_project/core/resources/router/app_router.dart';
 import 'package:mvvm_project/core/resources/router/router_path.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_country/country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -21,7 +21,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
-  ReposCubit reposCubit= instance<ReposCubit>();
+  CountryCubit countryCubit= instance<CountryCubit>();
   SelectCountryCubit selectCountryCubit= instance<SelectCountryCubit>();
   ConvertCubit convertCubit= instance<ConvertCubit>();
   HistoricalCubit historicalCubit= instance<HistoricalCubit>();
@@ -44,8 +44,8 @@ class _MyAppState extends State<MyApp> {
        return  MultiBlocProvider(
          providers: [
 
-           BlocProvider<ReposCubit>(
-               create: (BuildContext context) =>reposCubit
+           BlocProvider<CountryCubit>(
+               create: (BuildContext context) =>countryCubit
            ),
            BlocProvider<SelectCountryCubit>(
                create: (BuildContext context) =>selectCountryCubit

@@ -7,7 +7,7 @@ import 'package:mvvm_project/core/common/network/error_handler.dart';
 import 'package:mvvm_project/features/features_home/domain/usecase/repos_usecase.dart';
 import 'package:mvvm_project/core/common/network/failure.dart';
 import 'package:mvvm_project/features/features_home/domain/entities/repos_entities.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/country_cubit.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'repos_cubitTest.mocks.dart';
 

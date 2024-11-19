@@ -14,8 +14,8 @@ import 'package:mvvm_project/features/features_home/domain/usecase/convert_useca
 import 'package:mvvm_project/features/features_home/domain/usecase/historical_usecase.dart';
 import 'package:mvvm_project/features/features_home/domain/usecase/repos_usecase.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_country/country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -72,7 +72,7 @@ HomeModule() {
     instance.registerFactory<ReposUseCase>(() => ReposUseCase(instance()));
     instance.registerFactory<ConvertUseCase>(() => ConvertUseCase(instance()));
     instance.registerFactory<HistoricalUseCase>(() => HistoricalUseCase(instance()));
-    instance.registerFactory<ReposCubit>(() => ReposCubit(instance()));
+    instance.registerFactory<CountryCubit>(() => CountryCubit(instance()));
     instance.registerFactory<SelectCountryCubit>(() => SelectCountryCubit(instance()));
     instance.registerFactory<ConvertCubit>(() => ConvertCubit(instance()));
     instance.registerFactory<HistoricalCubit>(() => HistoricalCubit(instance()));

@@ -9,7 +9,7 @@ import 'package:mvvm_project/core/resources/constants/styles_manger.dart';
 import 'package:mvvm_project/core/resources/responsive.dart';
 import 'package:mvvm_project/core/resources/constants/color_manager.dart';
 import 'package:mvvm_project/core/resources/constants/value_manager.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_country/country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/widget/country_card.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -50,7 +50,7 @@ String getCurrency(String countryCode) {
   }
 Widget getContentWidget(){
 
-  final bloc = BlocProvider.of<ReposCubit>(context);
+  final bloc = BlocProvider.of<CountryCubit>(context);
   return  Scaffold(
            backgroundColor: ColorManager.white,
            body: SafeArea(
@@ -81,17 +81,17 @@ Widget getContentWidget(){
                    backgroundColor: ColorManager.select.withOpacity(.4),
                    showCancelButton: false,
                    onChanged: (val) {
-                     BlocProvider.of<ReposCubit>(context).search_getcountrys(val);
+                     BlocProvider.of<CountryCubit>(context).search_getcountrys(val);
                    },
                  )),
 
                            Expanded(child:
-                           BlocBuilder<ReposCubit, ReposState>(
+                           BlocBuilder<CountryCubit, CountryState>(
                              builder: (context, state) {
-                               if (state is ReposLoading) {
+                               if (state is CountryLoading) {
                                  bloc.get_getcountrys();
                                  return Center(child: CircularProgressIndicator());
-                               } else if (state is ReposLoaaded) {
+                               } else if (state is CountryLoaaded) {
                                  return ListView.builder(
                                      shrinkWrap: true,
                                      physics: ClampingScrollPhysics(),
@@ -118,7 +118,7 @@ Widget getContentWidget(){
                                      return InkWell(
                                        onTap: (){
                                          BlocProvider.of<SelectCountryCubit>(context).updateSelectedCurrency(item.currencyName.toString());
-                                         BlocProvider.of<ReposCubit>(context).closeSearch();
+                                         BlocProvider.of<CountryCubit>(context).closeSearch();
                                          Navigator.pop(context);
 
                                        },
@@ -128,7 +128,7 @@ Widget getContentWidget(){
 
                                  );
                                }
-                               else if (state is ReposError) {
+                               else if (state is CountryError) {
 
 
                                  return Center(child: Text(state.failure.message.toString()));

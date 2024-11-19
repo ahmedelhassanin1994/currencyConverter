@@ -1,21 +1,14 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mvvm_project/core/common/widget/custom_button.dart';
-import 'package:mvvm_project/core/common/widget/number_input.dart';
-import 'package:mvvm_project/core/common/widget/searchBox.dart';
 import 'package:mvvm_project/core/resources/constants/fonts_manager.dart';
 import 'package:mvvm_project/core/resources/constants/strings_manager.dart';
 import 'package:mvvm_project/core/resources/constants/styles_manger.dart';
 import 'package:mvvm_project/core/resources/responsive.dart';
 import 'package:mvvm_project/core/resources/constants/color_manager.dart';
 import 'package:mvvm_project/core/resources/constants/value_manager.dart';
-import 'package:mvvm_project/core/resources/router/router_path.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
-import 'package:mvvm_project/features/features_home/presentation/widget/country_card.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -41,8 +41,19 @@ class _FakeResponseConvert_0 extends _i1.SmartFake
         );
 }
 
-class _FakeBox_1<E> extends _i1.SmartFake implements _i3.Box<E> {
-  _FakeBox_1(
+class _FakeResponsehistorical_1 extends _i1.SmartFake
+    implements _i2.Responsehistorical {
+  _FakeResponsehistorical_1(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
+class _FakeBox_2<E> extends _i1.SmartFake implements _i3.Box<E> {
+  _FakeBox_2(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -98,6 +109,35 @@ class MockRemoteDataSourceHome extends _i1.Mock
           ),
         )),
       ) as _i5.Future<_i2.ResponseConvert>);
+
+  @override
+  _i5.Future<_i2.Responsehistorical> getHistorical(
+    String? from,
+    String? to,
+    String? date,
+  ) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getHistorical,
+          [
+            from,
+            to,
+            date,
+          ],
+        ),
+        returnValue:
+            _i5.Future<_i2.Responsehistorical>.value(_FakeResponsehistorical_1(
+          this,
+          Invocation.method(
+            #getHistorical,
+            [
+              from,
+              to,
+              date,
+            ],
+          ),
+        )),
+      ) as _i5.Future<_i2.Responsehistorical>);
 }
 
 /// A class which mocks [NetworkInfo].
@@ -129,7 +169,7 @@ class MockLocalDataSource extends _i1.Mock implements _i8.LocalDataSource {
           #Openbox,
           [],
         ),
-        returnValue: _i5.Future<_i3.Box<dynamic>>.value(_FakeBox_1<dynamic>(
+        returnValue: _i5.Future<_i3.Box<dynamic>>.value(_FakeBox_2<dynamic>(
           this,
           Invocation.method(
             #Openbox,

@@ -93,4 +93,34 @@ class MockRepositoryHome extends _i1.Mock implements _i3.RepositoryHome {
           ),
         )),
       ) as _i4.Future<_i2.Either<_i5.Failure, _i7.ResponseConvert>>);
+
+  @override
+  _i4.Future<_i2.Either<_i5.Failure, _i7.Responsehistorical>> getHistorical(
+    String? from,
+    String? to,
+    String? date,
+  ) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getHistorical,
+          [
+            from,
+            to,
+            date,
+          ],
+        ),
+        returnValue:
+            _i4.Future<_i2.Either<_i5.Failure, _i7.Responsehistorical>>.value(
+                _FakeEither_0<_i5.Failure, _i7.Responsehistorical>(
+          this,
+          Invocation.method(
+            #getHistorical,
+            [
+              from,
+              to,
+              date,
+            ],
+          ),
+        )),
+      ) as _i4.Future<_i2.Either<_i5.Failure, _i7.Responsehistorical>>);
 }

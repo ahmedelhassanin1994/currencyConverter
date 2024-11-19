@@ -12,7 +12,7 @@ import 'package:mvvm_project/core/resources/constants/color_manager.dart';
 import 'package:mvvm_project/core/resources/constants/value_manager.dart';
 import 'package:mvvm_project/core/resources/router/router_path.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
-import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_country/country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/widget/country_card.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -48,7 +48,7 @@ class _Currency_Converter extends State<Currency_Converter> {
 
 
   Widget getContentWidget(){
-   BlocProvider.of<ReposCubit>(context).get_getcountrys();
+   BlocProvider.of<CountryCubit>(context).get_getcountrys();
 
     return  Scaffold(
       backgroundColor: ColorManager.white,
@@ -183,7 +183,6 @@ class _Currency_Converter extends State<Currency_Converter> {
                       BlocBuilder<ConvertCubit, ConvertState>(
                          builder: (context, stateConvert) {
                           if(stateConvert is ConvertLoaaded){
-                            print("state : ${stateConvert}");
                             return Container(
                               width: AppSize.s100.w,
                               margin: EdgeInsets.only(left: AppMargin.m4.w,right: AppMargin.m4.w),
