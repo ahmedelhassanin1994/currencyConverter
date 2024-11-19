@@ -15,16 +15,16 @@ import 'package:mvvm_project/features/features_home/presentation/widget/country_
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ReposScreen extends StatefulWidget {
+class CountrysScreen extends StatefulWidget {
 
- const ReposScreen();
+ const CountrysScreen();
 
   @override
-  _ReposScreen createState() => _ReposScreen();
+  _CountrysScreen createState() => _CountrysScreen();
 }
 
 
-class _ReposScreen extends State<ReposScreen> {
+class _CountrysScreen extends State<CountrysScreen> {
 
 
 

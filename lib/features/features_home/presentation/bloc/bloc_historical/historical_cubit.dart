@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:intl/intl.dart';
 import 'package:meta/meta.dart';
 import 'package:mvvm_project/core/common/network/failure.dart';
 import 'package:mvvm_project/features/features_home/data/responeses/response_convert.dart';
@@ -13,10 +14,15 @@ class HistoricalCubit extends Cubit<HistoricalState> {
   HistoricalCubit(this.historicalUseCase) : super(HistoricalInitial());
 
 
-  Future<void>getHistorical( String from, String to, String date) async{
+  Future<void>getHistorical( String from, String to,) async{
+    DateTime currentDate = DateTime.now();
+    DateTime lastDate = currentDate.subtract(Duration(days: 7));
+    String formattedDate = DateFormat('yyyy-MM-dd').format(lastDate);
+
+
     emit(HistoricalLoading());
     (await historicalUseCase.execute(
-        InputHistoricalUseCase(from,to,date))).fold((
+        InputHistoricalUseCase(from,to,formattedDate))).fold((
         l) =>
     {
       emit(HistoricalError(l)),

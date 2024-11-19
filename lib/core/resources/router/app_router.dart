@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mvvm_project/core/resources/constants/strings_manager.dart';
 import 'package:mvvm_project/core/resources/router/router_path.dart';
 import 'package:mvvm_project/features/features_home/presentation/currency_converter.dart';
-import 'package:mvvm_project/features/features_home/presentation/repos_screen.dart';
+import 'package:mvvm_project/features/features_home/presentation/countrys_screen.dart';
+import 'package:mvvm_project/features/features_home/presentation/historical.dart';
 import 'package:page_transition/page_transition.dart';
 
 
@@ -16,9 +17,10 @@ class RouteGenerator {
 
       case Routes.all_routs:
         return _generateMaterialRoute(Currency_Converter());
-      case Routes.home:
-        return _generateMaterialRoute(ReposScreen());
-
+      case Routes.CountrysScreen:
+        return _generateMaterialRoute(CountrysScreen());
+      case Routes.historical:
+        return _generateMaterialRoute(HistoricalScreen());
       default:
         return unDefinedRoute();
     }

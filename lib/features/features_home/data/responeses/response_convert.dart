@@ -69,25 +69,24 @@ class Result {
 class Responsehistorical{
   String? date;
   String? base;
-  Result? results;
+  Map<String, dynamic>? results;
   int? ms;
 
   Responsehistorical({this.date, this.base, this.results, this.ms});
 
   Responsehistorical.fromJson(Map<String, dynamic> json) {
+    final currencyData = Map<String, dynamic>.from(json)..remove('');
+
     date = json['date'];
     base = json['base'];
-    results = json['results'] != null ? new Result.fromJson(json['results']) : null;
     ms = json['ms'];
+    results=json['results'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['date'] = this.date;
     data['base'] = this.base;
-    if (this.results != null) {
-      data['results'] = this.results!.toJson();
-    }
     data['ms'] = this.ms;
     return data;
   }

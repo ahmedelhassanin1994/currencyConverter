@@ -5,35 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/api_currencyConverter.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/data/responeses/response_convert.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/convert_usecase.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/historical_usecase.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_convert/convert_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_historical/historical_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/historical.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/repo_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/repo_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/widget/number_input.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/widget/number_input.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/constant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/constant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/di.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/di.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/my_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/my_app.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/core/resources/constants/strings_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/resources/constants/strings_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/data_source/remote_data_source_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/data_source/remote_data_source_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/repository/repositoryHome_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/repository/repositoryHome_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/repository/repository_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/repository/repository_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_selectCountry/select_country_cubit.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_selectCountry/select_country_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_selectCountry/select_country_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/resources/router/app_router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/resources/router/app_router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/resources/router/router_path.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/resources/router/router_path.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/responeses/response_convert.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/responeses/response_convert.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/currency_converter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/currency_converter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/repos_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/countrys_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,29 +57,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ahmed.hassanien/Downloads/currencyConverter/lib/features/features_home/domain/usecase&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter.main.dart.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ahmed.hassanien/Downloads/currencyConverter/lib/features/features_home/presentation",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/features/features_home/presentation" />
       <recent name="$PROJECT_DIR$/lib/features/features_home/domain/usecase" />
       <recent name="C:\Users\ahmed\Desktop\repoApp\lib\features\features_home\domain\usecase" />
       <recent name="C:\Users\ahmed\Desktop\repoApp\test" />

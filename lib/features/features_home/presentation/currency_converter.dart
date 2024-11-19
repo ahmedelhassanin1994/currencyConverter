@@ -60,6 +60,12 @@ class _Currency_Converter extends State<Currency_Converter> {
           AppStrings.convert_currencies,
           style: getBoldStyle(color: ColorManager.white,fontSize: FontSize.s16.sp),
         ),
+        actions: [
+          IconButton(onPressed: (){
+            Navigator.pushNamed(context, Routes.historical);
+
+          }, icon: Icon(Icons.date_range,color: ColorManager.white,))
+        ],
       ),
       body: SafeArea(
 
@@ -112,7 +118,7 @@ class _Currency_Converter extends State<Currency_Converter> {
                               InkWell(
                                 onTap: (){
                                   BlocProvider.of<SelectCountryCubit>(context).updateSelectedType(CurrencyInputType.from);
-                                  Navigator.pushNamed(context, Routes.home);
+                                  Navigator.pushNamed(context, Routes.CountrysScreen);
                                 },
                                 child:  Container(
                                   child: Text(
@@ -131,7 +137,7 @@ class _Currency_Converter extends State<Currency_Converter> {
                               InkWell(
                                onTap: (){
                                  BlocProvider.of<SelectCountryCubit>(context).updateSelectedType(CurrencyInputType.to);
-                                 Navigator.pushNamed(context, Routes.home);
+                                 Navigator.pushNamed(context, Routes.CountrysScreen);
                                },
                                child:  Container(
                                  child: Text(
