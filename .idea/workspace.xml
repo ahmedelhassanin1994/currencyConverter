@@ -7,40 +7,8 @@
     <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/mapper/mapper_product.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/WebViewArgment.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/langouage.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_cache.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_cache.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_currency.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_place.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_place_details.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_response.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/domain/repository/repository_googleapis.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/di.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/di.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/my_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/my_app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/data_source/remote_data_source_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/data_source/remote_data_source_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/mapper/mapper_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/mapper/mapper_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/repository/repositoryHome_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/repository/repositoryHome_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/responeses/model_commits.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/responeses/model_repos.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/entities/commits_entities.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/entities/commits_entities.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/entities/repos_entities.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/entities/repos_entities.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/repository/repository_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/repository/repository_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/convert_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/convert_usecase.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/historical_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/historical_usecase.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/repos_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/repos_usecase.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_country/country_cubit.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_repos/repos_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_country/country_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/countrys_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/countrys_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/currency_converter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/currency_converter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/historical.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/historical.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/widget/country_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/widget/country_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +53,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flutter Test.AddCache.executor": "Run",
     "Flutter Test.Convert .executor": "Run",
+    "Flutter Test.should open a box successfully.executor": "Run",
     "Flutter Test.should return a object of ResponseConvert when ApiCurrencyConverter.Convert is called.executor": "Run",
     "Flutter Test.should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called.executor": "Run",
     "Flutter Test.should throw an Exception when ApiCurrencyConverter.Convert throws an error.executor": "Run",
     "Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error.executor": "Run",
+    "Flutter Test.tests in local_data_source.dart.executor": "Run",
     "Flutter Test.tests in remote_data_source_home.dart.executor": "Run",
     "Flutter.main.dart.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -121,33 +92,32 @@
       <recent name="$PROJECT_DIR$/lib/features/features_home/data/responeses" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter Test.tests in remote_data_source_home.dart">
+  <component name="RunManager" selected="Flutter Test.tests in local_data_source.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="buildFlavor" value="Development" />
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="Convert " type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="Convert " />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/remote/remote_data_source_home.dart" />
+    <configuration name="AddCache" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="AddCache" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/remote/remote_data_source_home.dart" />
-      <option name="useRegexp" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="should throw an Exception when ApiCurrencyConverter.Convert throws an error" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should throw an Exception when ApiCurrencyConverter.Convert throws an error" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/remote/remote_data_source_home.dart" />
+    <configuration name="should open a box successfully" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="should open a box successfully" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" />
       <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/remote/remote_data_source_home.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in local_data_source.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
@@ -158,19 +128,19 @@
     </configuration>
     <list>
       <item itemvalue="Flutter.main.dart" />
-      <item itemvalue="Flutter Test.Convert " />
-      <item itemvalue="Flutter Test.should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called" />
-      <item itemvalue="Flutter Test.should throw an Exception when ApiCurrencyConverter.Convert throws an error" />
+      <item itemvalue="Flutter Test.AddCache" />
+      <item itemvalue="Flutter Test.should open a box successfully" />
       <item itemvalue="Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" />
+      <item itemvalue="Flutter Test.tests in local_data_source.dart" />
       <item itemvalue="Flutter Test.tests in remote_data_source_home.dart" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter Test.tests in local_data_source.dart" />
+        <item itemvalue="Flutter Test.should open a box successfully" />
+        <item itemvalue="Flutter Test.AddCache" />
         <item itemvalue="Flutter Test.tests in remote_data_source_home.dart" />
         <item itemvalue="Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error" />
-        <item itemvalue="Flutter Test.should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called" />
-        <item itemvalue="Flutter Test.Convert " />
-        <item itemvalue="Flutter Test.should throw an Exception when ApiCurrencyConverter.Convert throws an error" />
       </list>
     </recent_temporary>
   </component>

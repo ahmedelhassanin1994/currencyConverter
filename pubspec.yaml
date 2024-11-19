@@ -85,6 +85,7 @@ dev_dependencies:
   mockito: ^5.4.2
   matcher: ^0.12.15
   bloc_test: ^9.0.0
+  hive_test: ^1.0.0
 
   #  retrofit: ^4.0.2
 
