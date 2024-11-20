@@ -2,7 +2,7 @@ part of 'select_country_cubit.dart';
 
 enum CurrencyInputType { to, from }
 
-class CountrySelectionState {
+class CountrySelectionState extends Equatable{
   final String selectedFromCountry;
   final String selectedToCountry;
   late String amount;
@@ -31,4 +31,12 @@ class CountrySelectionState {
       currencyInputType:  currencyInputType ?? this.currencyInputType
     );
   }
-}
+
+  // TODO: implement props
+  @override
+  List<Object?> get props => [
+    selectedFromCountry,
+    selectedToCountry,
+    amount,
+    currencyInputType,
+  ];}

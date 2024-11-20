@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/main_production.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/di.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/di.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/api_currencyConverter.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/api_currencyConverter.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/responeses/model_country.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/responeses/model_country.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/repos_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/country_usecase.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_country/country_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_country/country_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_selectCountry/select_country_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_selectCountry/select_country_state.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +60,11 @@
     "Flutter Test.Convert.executor": "Run",
     "Flutter Test.LocalDataSource tests.executor": "Run",
     "Flutter Test.deleteLocal.executor": "Run",
+    "Flutter Test.emits [CountryLoading, CountryLoaaded] when data fetch is successful.executor": "Run",
     "Flutter Test.getCache.executor": "Run",
     "Flutter Test.getcountrys.executor": "Run",
+    "Flutter Test.initial state is ConvertInitial.executor": "Run",
+    "Flutter Test.initial state is correct.executor": "Run",
     "Flutter Test.should add a Model_Cache to the box.executor": "Run",
     "Flutter Test.should delete an item by title from the box.executor": "Run",
     "Flutter Test.should fetch remote data when online and cache is empty.executor": "Run",
@@ -89,11 +83,15 @@
     "Flutter Test.should return repos from remote data source when online.executor": "Run",
     "Flutter Test.should throw an Exception when ApiCurrencyConverter.Convert throws an error.executor": "Run",
     "Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error.executor": "Run",
+    "Flutter Test.tests in convert_cubitTest.dart.executor": "Run",
     "Flutter Test.tests in convert_usecase.dart.executor": "Run",
+    "Flutter Test.tests in country_cubitTest.dart.executor": "Run",
+    "Flutter Test.tests in historical_cubitTest.dart.executor": "Run",
     "Flutter Test.tests in local.dart.executor": "Run",
     "Flutter Test.tests in local_data_source.dart.executor": "Run",
     "Flutter Test.tests in remote_data_source_home.dart.executor": "Run",
     "Flutter Test.tests in repositoryHome_impl.dart.executor": "Run",
+    "Flutter Test.tests in selectCountry_cubitTest.dart.executor": "Run",
     "Flutter.main.dart.executor": "Run",
     "Flutter.main_development.dart.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -106,7 +104,7 @@
     "git-widget-placeholder": "main",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/Desktop/currencyConverter/test/features/home/domain/usecase",
+    "last_opened_file_path": "C:/Users/ahmed/Desktop/currencyConverter/lib",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -116,11 +114,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\Desktop\currencyConverter\lib" />
+      <recent name="C:\Users\ahmed\Desktop\currencyConverter\test\features\home\presentation\bloc" />
       <recent name="C:\Users\ahmed\Desktop\currencyConverter\test\features\home\domain\usecase" />
       <recent name="C:\Users\ahmed\Desktop\currencyConverter\test\features\home\data\data_source\local" />
       <recent name="$PROJECT_DIR$/lib/features/features_home/presentation" />
-      <recent name="$PROJECT_DIR$/lib/features/features_home/domain/usecase" />
-      <recent name="C:\Users\ahmed\Desktop\repoApp\lib\features\features_home\domain\usecase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/features/features_home/data/responeses" />
@@ -132,50 +130,48 @@
       <option name="filePath" value="$PROJECT_DIR$/lib/main_development.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="Convert (1)" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="Convert" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/historical_usecase.dart" />
+    <configuration name="emits [CountryLoading, CountryLoaaded] when data fetch is successful" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="emits [CountryLoading, CountryLoaaded] when data fetch is successful" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/presentation/bloc/convert_cubitTest.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Convert" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="Convert" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/convert_usecase.dart" />
+    <configuration name="initial state is correct" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="initial state is correct" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/presentation/bloc/selectCountry_cubitTest.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="should return a Failure on error (1)" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should return a Failure on error" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/convert_usecase.dart" />
+    <configuration name="tests in convert_cubitTest.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/presentation/bloc/convert_cubitTest.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="should return a Failure on error" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should return a Failure on error" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/historical_usecase.dart" />
+    <configuration name="tests in historical_cubitTest.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/presentation/bloc/historical_cubitTest.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="tests in convert_usecase.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/convert_usecase.dart" />
+    <configuration name="tests in selectCountry_cubitTest.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/presentation/bloc/selectCountry_cubitTest.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Flutter.main_development.dart" />
-      <item itemvalue="Flutter Test.Convert" />
-      <item itemvalue="Flutter Test.Convert (1)" />
-      <item itemvalue="Flutter Test.should return a Failure on error" />
-      <item itemvalue="Flutter Test.should return a Failure on error (1)" />
-      <item itemvalue="Flutter Test.tests in convert_usecase.dart" />
+      <item itemvalue="Flutter Test.emits [CountryLoading, CountryLoaaded] when data fetch is successful" />
+      <item itemvalue="Flutter Test.initial state is correct" />
+      <item itemvalue="Flutter Test.tests in convert_cubitTest.dart" />
+      <item itemvalue="Flutter Test.tests in historical_cubitTest.dart" />
+      <item itemvalue="Flutter Test.tests in selectCountry_cubitTest.dart" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Flutter Test.should return a Failure on error" />
-        <item itemvalue="Flutter Test.Convert (1)" />
-        <item itemvalue="Flutter Test.tests in convert_usecase.dart" />
-        <item itemvalue="Flutter Test.should return a Failure on error (1)" />
-        <item itemvalue="Flutter Test.Convert" />
+        <item itemvalue="Flutter Test.tests in selectCountry_cubitTest.dart" />
+        <item itemvalue="Flutter Test.initial state is correct" />
+        <item itemvalue="Flutter Test.tests in historical_cubitTest.dart" />
+        <item itemvalue="Flutter Test.tests in convert_cubitTest.dart" />
+        <item itemvalue="Flutter Test.emits [CountryLoading, CountryLoaaded] when data fetch is successful" />
       </list>
     </recent_temporary>
   </component>
