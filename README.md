@@ -32,7 +32,7 @@ This layer contains all the information about the UI and everything to show to t
 
 
 
-![Clean-Architecture-Flutter-Diagram (1).webp](..%2FClean-Architecture-Flutter-Diagram%20%281%29.webp)
+[Uploading Clean-Architecture-Flutter-Diagram (1).webp…]()
 
 ## Technologies Used
 - Android Studio
