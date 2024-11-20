@@ -44,7 +44,7 @@ This layer contains all the information about the UI and everything to show to t
 - get_it //dependency injection
 - responsive_sizer
 - internet_connection_checker
-- hive //cts as a lightweight and fast NoSQL database for local data storage. It allows you to easily store and retrieve data on the device itself, even when offline
+- hive // lightweight and fast NoSQL database for local data storage. It allows you to easily store and retrieve data on the device itself, even when offline
 - cached_network_image  //provides a robust solution for caching images, thereby improving the performance and user experience of your Flutter applications
 - flutter_bloc
 - shared_preferences
