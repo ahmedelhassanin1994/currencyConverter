@@ -29,7 +29,7 @@ class LocalDataSourceImplementer implements LocalDataSource {
     // TODO: implement deleteLocal
 
      final box = await Openbox();
-    // final Map<dynamic, dynamic> deliveriesMap = box.toMap();
+    final Map<dynamic, dynamic> deliveriesMap = box.toMap();
     // dynamic desiredKey;
     // if (deliveriesMap.isNotEmpty) {
     //   deliveriesMap.forEach((key, value) {

@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/di.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/di.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/data_source/local_data_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/api_currencyConverter.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/api_currencyConverter.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/responeses/model_country.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/responeses/model_country.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/repos_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/country_usecase.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_country/country_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_country/country_cubit.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +43,12 @@
     &quot;assignee&quot;: &quot;ahmedelhassanin1994&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ahmedelhassanin1994/repoApp.git&quot;,
-    &quot;accountId&quot;: &quot;249c80b3-1a78-496f-b253-41547035b964&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ahmedelhassanin1994/currencyConverter.git",
+    "accountId": "249c80b3-1a78-496f-b253-41547035b964"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,16 +62,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flutter Test.AddCache should call addAll on the Hive box.executor": "Run",
     "Flutter Test.AddCache.executor": "Run",
+    "Flutter Test.Convert (1).executor": "Run",
     "Flutter Test.Convert .executor": "Run",
+    "Flutter Test.Convert.executor": "Run",
+    "Flutter Test.LocalDataSource tests.executor": "Run",
+    "Flutter Test.deleteLocal.executor": "Run",
+    "Flutter Test.getCache.executor": "Run",
+    "Flutter Test.getcountrys.executor": "Run",
+    "Flutter Test.should add a Model_Cache to the box.executor": "Run",
+    "Flutter Test.should delete an item by title from the box.executor": "Run",
+    "Flutter Test.should fetch remote data when online and cache is empty.executor": "Run",
+    "Flutter Test.should fetch remote data when online.executor": "Run",
     "Flutter Test.should open a box successfully.executor": "Run",
+    "Flutter Test.should return a Failure on error (1).executor": "Run",
+    "Flutter Test.should return a Failure on error.executor": "Run",
+    "Flutter Test.should return a Model_Cache with the specified key.executor": "Run",
+    "Flutter Test.should return a ResponseConvert on success.executor": "Run",
+    "Flutter Test.should return a list of Country on success.executor": "Run",
     "Flutter Test.should return a object of ResponseConvert when ApiCurrencyConverter.Convert is called.executor": "Run",
     "Flutter Test.should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called.executor": "Run",
+    "Flutter Test.should return cached data when offline.executor": "Run",
+    "Flutter Test.should return cached data when online and cache is not empty.executor": "Run",
+    "Flutter Test.should return failure when remote fetch fails.executor": "Run",
+    "Flutter Test.should return repos from remote data source when online.executor": "Run",
     "Flutter Test.should throw an Exception when ApiCurrencyConverter.Convert throws an error.executor": "Run",
     "Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error.executor": "Run",
+    "Flutter Test.tests in convert_usecase.dart.executor": "Run",
+    "Flutter Test.tests in local.dart.executor": "Run",
     "Flutter Test.tests in local_data_source.dart.executor": "Run",
     "Flutter Test.tests in remote_data_source_home.dart.executor": "Run",
+    "Flutter Test.tests in repositoryHome_impl.dart.executor": "Run",
     "Flutter.main.dart.executor": "Run",
+    "Flutter.main_development.dart.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -70,7 +106,7 @@
     "git-widget-placeholder": "main",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ahmed.hassanien/Downloads/currencyConverter/lib/features/features_home/presentation",
+    "last_opened_file_path": "C:/Users/ahmed/Desktop/currencyConverter/test/features/home/domain/usecase",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -80,64 +116,66 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\Desktop\currencyConverter\test\features\home\domain\usecase" />
+      <recent name="C:\Users\ahmed\Desktop\currencyConverter\test\features\home\data\data_source\local" />
       <recent name="$PROJECT_DIR$/lib/features/features_home/presentation" />
       <recent name="$PROJECT_DIR$/lib/features/features_home/domain/usecase" />
       <recent name="C:\Users\ahmed\Desktop\repoApp\lib\features\features_home\domain\usecase" />
-      <recent name="C:\Users\ahmed\Desktop\repoApp\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/features/features_home/data/responeses" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter Test.AddCache">
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+  <component name="RunManager" selected="Flutter.main_development.dart">
+    <configuration name="main_development.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="buildFlavor" value="Development" />
-      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/lib/main_development.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="AddCache" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="AddCache" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
+    <configuration name="Convert (1)" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="Convert" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/historical_usecase.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="should add a Model_Cache to the box" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should add a Model_Cache to the box" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
+    <configuration name="Convert" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="Convert" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/convert_usecase.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="should open a box successfully" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="should open a box successfully" />
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
+    <configuration name="should return a Failure on error (1)" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="should return a Failure on error" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/convert_usecase.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="tests in local_data_source.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/local/local_data_source.dart" />
+    <configuration name="should return a Failure on error" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="should return a Failure on error" />
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/historical_usecase.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="tests in remote_data_source_home.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testFile" value="$PROJECT_DIR$/test/features/home/data/data_source/remote/remote_data_source_home.dart" />
+    <configuration name="tests in convert_usecase.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/features/home/domain/usecase/convert_usecase.dart" />
       <option name="useRegexp" value="false" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flutter.main.dart" />
-      <item itemvalue="Flutter Test.AddCache" />
-      <item itemvalue="Flutter Test.should add a Model_Cache to the box" />
-      <item itemvalue="Flutter Test.should open a box successfully" />
-      <item itemvalue="Flutter Test.tests in local_data_source.dart" />
-      <item itemvalue="Flutter Test.tests in remote_data_source_home.dart" />
+      <item itemvalue="Flutter.main_development.dart" />
+      <item itemvalue="Flutter Test.Convert" />
+      <item itemvalue="Flutter Test.Convert (1)" />
+      <item itemvalue="Flutter Test.should return a Failure on error" />
+      <item itemvalue="Flutter Test.should return a Failure on error (1)" />
+      <item itemvalue="Flutter Test.tests in convert_usecase.dart" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Flutter Test.AddCache" />
-        <item itemvalue="Flutter Test.should add a Model_Cache to the box" />
-        <item itemvalue="Flutter Test.tests in local_data_source.dart" />
-        <item itemvalue="Flutter Test.should open a box successfully" />
-        <item itemvalue="Flutter Test.tests in remote_data_source_home.dart" />
+        <item itemvalue="Flutter Test.should return a Failure on error" />
+        <item itemvalue="Flutter Test.Convert (1)" />
+        <item itemvalue="Flutter Test.tests in convert_usecase.dart" />
+        <item itemvalue="Flutter Test.should return a Failure on error (1)" />
+        <item itemvalue="Flutter Test.Convert" />
       </list>
     </recent_temporary>
   </component>

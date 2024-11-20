@@ -3,23 +3,23 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:mvvm_project/core/common/network/failure.dart';
 import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart';
-import 'package:mvvm_project/features/features_home/domain/usecase/repos_usecase.dart';
+import 'package:mvvm_project/features/features_home/domain/usecase/country_usecase.dart';
 
 part 'country_state.dart';
 
 class CountryCubit extends Cubit<CountryState> {
 
-  late ReposUseCase reposUseCase;
+  late CountryUseCase countryUseCase;
   List<ModelCountry> searchCountry=[];
   List<ModelCountry> allCountry=[];
   late bool isSearching = false;
 
 
-  CountryCubit(this.reposUseCase) : super(CountryLoading());
+  CountryCubit(this.countryUseCase) : super(CountryLoading());
 
   Future<void>get_getcountrys() async{
     emit(CountryLoading());
-    (await reposUseCase.execute(
+    (await countryUseCase.execute(
         InputUseCase())).fold((
         l) =>
     {

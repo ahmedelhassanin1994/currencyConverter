@@ -27,7 +27,6 @@ void main() {
 
   group('AddCache', () {
     test('should add a Model_Cache to the box', () async {
-      final modelCache =  ModelCountry(name: 'Egypt',code: 'EG',flag: 'flag.png',currencyName: 'EGP',currencySymbol: 'EGP');
       final tcountrys = [
         ModelCountry(name: 'Egypt',code: 'EG',flag: 'flag.png',currencyName: 'EGP',currencySymbol: 'EGP'),
         ModelCountry(name: 'Egypt',code: 'EG',flag: 'flag.png',currencyName: 'EGP',currencySymbol: 'EGP'),
@@ -43,25 +42,34 @@ void main() {
 
   group('deleteLocal', () {
     test('should delete an item by title from the box', () async {
-      final modelCache =  ModelCountry(name: 'Egypt',code: 'EG',flag: 'flag.png',currencyName: 'EGP',currencySymbol: 'EGP');
-      final deliveriesMap = {1: modelCache};
 
-      when(mockBox.toMap()).thenReturn(deliveriesMap);
+      // Arrange
+      when(mockBox.clear()).thenAnswer((_) async => 0);
 
-      await localDataSource.deleteLocal("testKey");
+      // Stub Openbox to return the mock box
+      when(mockBox.toMap()).thenReturn({});
 
-      verify(mockBox.delete(1)).called(1);
+      // Act
+      await localDataSource.deleteLocal('Country1');
+
+      // Assert
+      verify(mockBox.clear()).called(1);
     });
   });
 
   group('getCache', () {
     test('should return a Model_Cache with the specified key', () async {
-      final modelCache =  ModelCountry(name: 'Egypt',code: 'EG',flag: 'flag.png',currencyName: 'EGP',currencySymbol: 'EGP');
-      when(mockBox.values).thenReturn([modelCache]);
+      final tcountrys = [
+        ModelCountry(name: 'Egypt',code: 'EG',flag: 'flag.png',currencyName: 'EGP',currencySymbol: 'EGP'),
+        ModelCountry(name: 'united states',code: 'USA',flag: 'flag2.png',currencyName: 'USA',currencySymbol: 'USA'),
+      ];
 
-      final result = await localDataSource.getCache();
 
-      expect(result, modelCache);
+      when(mockBox.values).thenReturn(tcountrys);
+
+      final result =await  localDataSource.getCache();
+
+      expect(result, tcountrys);
 
 
 

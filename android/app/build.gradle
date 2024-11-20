@@ -102,7 +102,20 @@ android {
 
         }
     }
+      flavorDimensions "default"
+    productFlavors {
+        Development {
+            dimension "default"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+        }
+        Production {
+            dimension "default"
+            signingConfig signingConfigs.release
+        }
+    }
 }
+
 
 flutter {
     source '../..'

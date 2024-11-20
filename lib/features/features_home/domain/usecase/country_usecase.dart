@@ -5,10 +5,10 @@ import 'package:mvvm_project/features/features_home/data/responeses/model_countr
 import 'package:mvvm_project/features/features_home/domain/repository/repository_home.dart';
 
 
-class ReposUseCase implements BaseCase<InputUseCase,List<ModelCountry>> {
+class CountryUseCase implements BaseCase<InputUseCase,List<ModelCountry>> {
   final RepositoryHome _repository;
 
-  ReposUseCase(this._repository);
+  CountryUseCase(this._repository);
 
   @override
   Future<Either<Failure,List<ModelCountry>>> execute(InputUseCase input) async {

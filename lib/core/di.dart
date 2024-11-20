@@ -12,7 +12,7 @@ import 'package:mvvm_project/features/features_home/data/repository/repositoryHo
 import 'package:mvvm_project/features/features_home/domain/repository/repository_home.dart';
 import 'package:mvvm_project/features/features_home/domain/usecase/convert_usecase.dart';
 import 'package:mvvm_project/features/features_home/domain/usecase/historical_usecase.dart';
-import 'package:mvvm_project/features/features_home/domain/usecase/repos_usecase.dart';
+import 'package:mvvm_project/features/features_home/domain/usecase/country_usecase.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_country/country_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_historical/historical_cubit.dart';
@@ -68,8 +68,8 @@ Future<void> initAppModule() async {
 }
 
 HomeModule() {
-  if (!GetIt.I.isRegistered<ReposUseCase>()) {
-    instance.registerFactory<ReposUseCase>(() => ReposUseCase(instance()));
+  if (!GetIt.I.isRegistered<CountryUseCase>()) {
+    instance.registerFactory<CountryUseCase>(() => CountryUseCase(instance()));
     instance.registerFactory<ConvertUseCase>(() => ConvertUseCase(instance()));
     instance.registerFactory<HistoricalUseCase>(() => HistoricalUseCase(instance()));
     instance.registerFactory<CountryCubit>(() => CountryCubit(instance()));
