@@ -54,7 +54,6 @@ dependencies:
   flutter_bloc: ^8.1.6
   equatable: ^2.0.3
   intl: ^0.18.0
-  country_currency_pickers: ^3.0.0
   shared_preferences:
   flutter_dotenv: ^5.0.2
 
