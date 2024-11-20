@@ -31,8 +31,7 @@ Presentation
 This layer contains all the information about the UI and everything to show to the end user customer. The presentation layer also contains the ViewModel which is the state  and often termed as brain of UI.
 
 
-
-![Clean-Architecture-Flutter-Diagram (1).webp](..%2FClean-Architecture-Flutter-Diagram%20%281%29.webp)
+![Clean-Architecture-Flutter-Diagram (1).webp](screenshot%2FClean-Architecture-Flutter-Diagram%20%281%29.webp)
 
 ## Technologies Used
 - Android Studio
