@@ -11,10 +11,7 @@ import '../../di.dart';
 
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
-
-
     switch (settings.name) {
-
       case Routes.all_routs:
         return _generateMaterialRoute(Currency_Converter());
       case Routes.CountrysScreen:
@@ -24,6 +21,7 @@ class RouteGenerator {
       default:
         return unDefinedRoute();
     }
+    
   }
 
   static Route<dynamic> unDefinedRoute() {

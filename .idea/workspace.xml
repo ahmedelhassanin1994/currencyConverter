@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="" />
+    <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/resources/router/app_router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/resources/router/app_router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +35,12 @@
     &quot;assignee&quot;: &quot;ahmedelhassanin1994&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ahmedelhassanin1994/currencyConverter.git",
-    "accountId": "249c80b3-1a78-496f-b253-41547035b964"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ahmedelhassanin1994/currencyConverter.git&quot;,
+    &quot;accountId&quot;: &quot;249c80b3-1a78-496f-b253-41547035b964&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -46,67 +52,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flutter Test.AddCache should call addAll on the Hive box.executor": "Run",
-    "Flutter Test.AddCache.executor": "Run",
-    "Flutter Test.Convert (1).executor": "Run",
-    "Flutter Test.Convert .executor": "Run",
-    "Flutter Test.Convert.executor": "Run",
-    "Flutter Test.LocalDataSource tests.executor": "Run",
-    "Flutter Test.deleteLocal.executor": "Run",
-    "Flutter Test.emits [CountryLoading, CountryLoaaded] when data fetch is successful.executor": "Run",
-    "Flutter Test.getCache.executor": "Run",
-    "Flutter Test.getcountrys.executor": "Run",
-    "Flutter Test.initial state is ConvertInitial.executor": "Run",
-    "Flutter Test.initial state is correct.executor": "Run",
-    "Flutter Test.should add a Model_Cache to the box.executor": "Run",
-    "Flutter Test.should delete an item by title from the box.executor": "Run",
-    "Flutter Test.should fetch remote data when online and cache is empty.executor": "Run",
-    "Flutter Test.should fetch remote data when online.executor": "Run",
-    "Flutter Test.should open a box successfully.executor": "Run",
-    "Flutter Test.should return a Failure on error (1).executor": "Run",
-    "Flutter Test.should return a Failure on error.executor": "Run",
-    "Flutter Test.should return a Model_Cache with the specified key.executor": "Run",
-    "Flutter Test.should return a ResponseConvert on success.executor": "Run",
-    "Flutter Test.should return a list of Country on success.executor": "Run",
-    "Flutter Test.should return a object of ResponseConvert when ApiCurrencyConverter.Convert is called.executor": "Run",
-    "Flutter Test.should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called.executor": "Run",
-    "Flutter Test.should return cached data when offline.executor": "Run",
-    "Flutter Test.should return cached data when online and cache is not empty.executor": "Run",
-    "Flutter Test.should return failure when remote fetch fails.executor": "Run",
-    "Flutter Test.should return repos from remote data source when online.executor": "Run",
-    "Flutter Test.should throw an Exception when ApiCurrencyConverter.Convert throws an error.executor": "Run",
-    "Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error.executor": "Run",
-    "Flutter Test.tests in convert_cubitTest.dart.executor": "Run",
-    "Flutter Test.tests in convert_usecase.dart.executor": "Run",
-    "Flutter Test.tests in country_cubitTest.dart.executor": "Run",
-    "Flutter Test.tests in historical_cubitTest.dart.executor": "Run",
-    "Flutter Test.tests in local.dart.executor": "Run",
-    "Flutter Test.tests in local_data_source.dart.executor": "Run",
-    "Flutter Test.tests in remote_data_source_home.dart.executor": "Run",
-    "Flutter Test.tests in repositoryHome_impl.dart.executor": "Run",
-    "Flutter Test.tests in selectCountry_cubitTest.dart.executor": "Run",
-    "Flutter.main.dart.executor": "Run",
-    "Flutter.main_development.dart.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ahmed/Desktop/currencyConverter/lib",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter Test.AddCache should call addAll on the Hive box.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.AddCache.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.Convert (1).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.Convert .executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.Convert.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.LocalDataSource tests.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.deleteLocal.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.emits [CountryLoading, CountryLoaaded] when data fetch is successful.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.getCache.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.getcountrys.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.initial state is ConvertInitial.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.initial state is correct.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should add a Model_Cache to the box.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should delete an item by title from the box.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should fetch remote data when online and cache is empty.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should fetch remote data when online.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should open a box successfully.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return a Failure on error (1).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return a Failure on error.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return a Model_Cache with the specified key.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return a ResponseConvert on success.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return a list of Country on success.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return a object of ResponseConvert when ApiCurrencyConverter.Convert is called.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return a object of Responsehistorical when ApiCurrencyConverter.getHistorical is called.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return cached data when offline.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return cached data when online and cache is not empty.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return failure when remote fetch fails.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should return repos from remote data source when online.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should throw an Exception when ApiCurrencyConverter.Convert throws an error.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should throw an Exception when ApiCurrencyConverter.getHistorical throws an error.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in convert_cubitTest.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in convert_usecase.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in country_cubitTest.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in historical_cubitTest.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in local.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in local_data_source.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in remote_data_source_home.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in repositoryHome_impl.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in selectCountry_cubitTest.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main_development.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed/Desktop/currencyConverter/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ahmed\Desktop\currencyConverter\lib" />

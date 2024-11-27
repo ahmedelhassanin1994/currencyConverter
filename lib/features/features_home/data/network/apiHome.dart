@@ -9,6 +9,7 @@ part 'apiHome.g.dart';
 
 @RestApi(baseUrl: Constant.baseUrl,)
 abstract class ApiHome {
+
   factory ApiHome(Dio dio, {String baseUrl}) = _ApiHome;
   @GET("v3.1/all")
   Future<List<ModelCountry>> getcountrys();

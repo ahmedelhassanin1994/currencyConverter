@@ -24,5 +24,6 @@ void main() async {
     systemNavigationBarColor: ColorManager.white, // navigation bar color
     statusBarColor: ColorManager.black, // status bar color
   ));
+  
   runApp(MyApp());
 }
