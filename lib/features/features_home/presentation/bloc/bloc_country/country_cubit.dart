@@ -1,9 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:mvvm_project/core/common/network/failure.dart';
-import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart';
-import 'package:mvvm_project/features/features_home/domain/usecase/country_usecase.dart';
+import 'package:core_data/core_data.dart';
 
 part 'country_state.dart';
 
@@ -15,7 +13,7 @@ class CountryCubit extends Cubit<CountryState> {
   late bool isSearching = false;
 
 
-  CountryCubit(this.countryUseCase) : super(CountryLoading());
+  CountryCubit(this.countryUseCase) : super(CountryInitial());
 
   Future<void>get_getcountrys() async{
     emit(CountryLoading());

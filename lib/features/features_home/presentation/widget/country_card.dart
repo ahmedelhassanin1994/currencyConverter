@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:core_data/core_data.dart';
 import 'package:flutter/material.dart';
 import 'package:mvvm_project/core/resources/constants/color_manager.dart';
 import 'package:mvvm_project/core/resources/constants/styles_manger.dart';
 import 'package:mvvm_project/core/resources/constants/value_manager.dart';
-import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class CardCountry extends StatelessWidget {

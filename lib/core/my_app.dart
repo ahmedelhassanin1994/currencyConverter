@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mvvm_project/core/di.dart';
 import 'package:mvvm_project/core/resources/constants/theme_manager.dart';
+import 'package:mvvm_project/core/resources/router/appRouter.dart';
 import 'package:mvvm_project/core/resources/router/app_router.dart';
 import 'package:mvvm_project/core/resources/router/router_path.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_convert/convert_cubit.dart';
@@ -37,6 +38,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     selectCountryCubit.getLastCurrency();
+    final _appRouter = AppRouter();
+
 
     // TODO: implement build
     return ResponsiveSizer(builder: (context, orientation, deviceType) {
@@ -57,10 +60,13 @@ class _MyAppState extends State<MyApp> {
                create: (BuildContext context) =>historicalCubit
            ),
          ],
-         child:   MaterialApp(
-           onGenerateRoute: RouteGenerator.getRoute,
-           debugShowCheckedModeBanner: false,
-           initialRoute: Routes.all_routs,
+         child:   MaterialApp.router(
+           // routerDelegate: _appRouter.delegate(// Must match a defined route
+           // ),
+           // onGenerateRoute: RouteGenerator.getRoute,
+            debugShowCheckedModeBanner: false,
+           routerConfig: _appRouter.config(),
+           // initialRoute:_appRouter.config(),
            theme: getApplicationTheme(),
 
 

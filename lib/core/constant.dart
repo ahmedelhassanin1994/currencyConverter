@@ -1,8 +1,10 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 class Constant {
-  static const String baseUrl = "https://restcountries.com/";
-  static const String baseUrl_providor = "https://api.fastforex.io/";
+  static  String baseUrl = "${dotenv.env['baseUrl']}";
+  static  String baseUrl_providor = "${dotenv.env['baseUrl_providor']}";
   static const int SliderCount = 5;
-  static const api_key="feb466c199-9c670905e6-sn3ff0";
+  static String api_key="${dotenv.env['api_key']}";
 
 
    //key cache

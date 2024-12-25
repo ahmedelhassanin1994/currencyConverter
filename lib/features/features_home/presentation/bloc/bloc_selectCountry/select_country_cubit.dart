@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
+import 'package:core_data/core_data.dart';
 import 'package:equatable/equatable.dart';
-import 'package:meta/meta.dart';
-import 'package:mvvm_project/core/app_prefs.dart';
-import 'package:mvvm_project/features/features_home/data/responeses/model_country.dart';
 
 part 'select_country_state.dart';
 

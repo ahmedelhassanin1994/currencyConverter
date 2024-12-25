@@ -1,9 +1,7 @@
 import 'package:bloc/bloc.dart';
+import 'package:core_data/core_data.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:mvvm_project/core/common/network/failure.dart';
-import 'package:mvvm_project/features/features_home/data/responeses/response_convert.dart';
-import 'package:mvvm_project/features/features_home/domain/usecase/convert_usecase.dart';
 
 part 'convert_state.dart';
 

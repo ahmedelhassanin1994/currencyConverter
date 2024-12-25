@@ -2,9 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:intl/intl.dart';
 import 'package:meta/meta.dart';
-import 'package:mvvm_project/core/common/network/failure.dart';
-import 'package:mvvm_project/features/features_home/data/responeses/response_convert.dart';
-import 'package:mvvm_project/features/features_home/domain/usecase/historical_usecase.dart';
+import 'package:core_data/core_data.dart';
 
 part 'historical_state.dart';
 

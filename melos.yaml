@@ -1,0 +1,49 @@
+name: my_project
+
+packages:
+  - packages/**
+
+
+# Melos supports various command lifecycle hooks that can be defined in you
+# if you needed to run something such as a build runner automatically after melos bootstrap is run, you can add a post hook script:
+bootstrap:
+    usePubspecOverrides: false
+    runPubGetInParallel: false
+version:
+    # Generate commit links in package changelogs.
+    # Only allow versioning to happen on main branch.
+    branch: develop
+    # Additionally build a changelog at the root of the workspace.
+    workspaceChangelog: true
+    postbootstrap: dart pub run build_runner build
+
+
+
+scripts:
+
+  build_runner:
+    run: flutter pub run build_runner build --delete-conflicting-outputs
+  analyze:
+    run: melos exec -- "flutter analyze"
+    description: Run `flutter analyze` in all packages
+
+  generate:
+    run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run build_runner build --delete-conflicting-outputs"
+    description: Build all generated files for Flutter packages in this project.
+
+
+  format:
+    run: melos exec -- "flutter format . --set-exit-if-changed"
+    description: Run `flutter format .` in all packages
+
+  cache-repair:
+    run: melos exec -c 1 -- "flutter pub cache repair"
+    description: Run `flutter pub cache repair` in all packages
+
+  get: melos exec -- flutter pub get
+
+  unittest:
+    run: melos exec -- flutter test
+  rmlock:
+    run: melos exec -c 1 -- "rm -f pubspec.lock"
+    description: Run `rm -f pubspec.lock` in all packages
